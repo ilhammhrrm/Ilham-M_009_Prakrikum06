@@ -43,14 +43,12 @@ struct link *penunjuk;
     info.awal=0;
     info.akhir=0;
     printf("Masukkan jumlah data!\n");
-    scanf("%d", &n);//masukkan jumlah data yang diinginkan
-    //buat linked list
+    scanf("%d", &n);
     while(i<n){
         penunjuk=tambah_data(&info);
         penunjuk->data=i*2;
         i++;
     }
-    //tampilkan isi struct dalam linked list
     printf("\nAntrian : ");
     penunjuk=info.awal;
     while(penunjuk!=0){
@@ -58,7 +56,6 @@ struct link *penunjuk;
         penunjuk=penunjuk->next;
     }
     hapus_data(&info);
-    //tampilkan isi struct dalam linked list setelah data pertama dihapus
     printf("\n\nSetelah data pertama dalam antrian dihapus?\n");
     printf("Antrian : ");
     penunjuk=info.awal;
@@ -67,7 +64,6 @@ struct link *penunjuk;
         penunjuk=penunjuk->next;
     }
     printf("\n");
-    //bebaskan semua memori yang sudah digunakan
     penunjuk=info.awal;
     while(penunjuk!=0){
         penunjuk=hapus_data(&info);
