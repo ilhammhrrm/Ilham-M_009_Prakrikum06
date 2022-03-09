@@ -98,9 +98,7 @@ class linkedlist{
 };
 void Menu(){int pilihan, koefisien, pangkat;
       linkedlist list;
-      cout<<"*************************************"<<endl;
       cout << "  Program  Manipulasi Polinom    "<<endl;
-      cout<<"*************************************"<<endl;
       list.setBilPolinom(15,0);
       list.setBilPolinom(1,3);
       list.setBilPolinom(5,5);
@@ -135,9 +133,4 @@ void Menu(){int pilihan, koefisien, pangkat;
 int main (){
     Menu ();
     
-}
-                    
-                    
-                    
-                    
-                    
+}                     
